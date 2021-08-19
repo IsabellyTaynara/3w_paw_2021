@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IsabellyTaynara/3w_paw_2021/issues"
   },
-  "homepage": "https://github.com/IsabellyTaynara/3w_paw_2021#readme"
+  "homepage": "https://github.com/IsabellyTaynara/3w_paw_2021#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
