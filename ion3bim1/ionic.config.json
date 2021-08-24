@@ -1,0 +1,7 @@
+{
+  "name": "ion3bim1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
