@@ -1,20 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Com qual combustível?
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-item>
+      <ion-label position="floating">
+        Preço da Gasolina 
+      </ion-label>
+      <ion-input type="number" [(ngModel)] ="gasolina"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Preço do Etanol
+      </ion-label>
+      <ion-input type="number" [(ngModel)] ="etanol"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <p class="ion-text-center">
+        Abastecer com: {{resposta}}
+      </p>
+    </ion-item>
+    <div>
+      <ion-button expand="block">Verificar</ion-button>
+    </div>
+    <div>
+      {{resposta}}
+    </div>
   </div>
 </ion-content>
