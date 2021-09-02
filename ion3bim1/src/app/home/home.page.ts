@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  gasolina = undefined;
-  etanol = undefined;
-  resposta = undefined;
+  gasolina = null;
+  etanol = null;
+  resposta = null
 
   constructor() {}
 
