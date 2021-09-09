@@ -10,17 +10,26 @@ export class HomePage {
   etanol = null;
   resposta = null
 
+  imagens = [
+    'logo.jpg',
+    'gasolina.jpg',
+    'etanol.jpg',
+    'dois.jpg'
+  ]
+
+  imagem = this.imagens[0];
+
   constructor() {}
 
   verificar(): void{
-    let diferenca = this.etanol / this.gasolina;
-    this.resposta = this.etanol / this.gasolina;
-    if(diferenca > 0.7){
-      this.resposta ="GASOLINA";
-    }else if(diferenca < 0.7){
-      this.resposta ="ETANOL";
+    let diferenca = this.resposta = this.etanol/ this.gasolina;
+    if(diferenca>0.7){
+      this.imagem = this.imagens[1];
+    }else if(diferenca<0.7){
+      this.imagem = this.imagens[2];
     }else{
-      this.resposta ="TANTO FAZ.."
+      this.imagem = this.imagens[3]
     }
   }
 }
+

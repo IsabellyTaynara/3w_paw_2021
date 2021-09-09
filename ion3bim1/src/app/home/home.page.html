@@ -20,14 +20,13 @@
       </ion-label>
       <ion-input type="number" [(ngModel)] ="etanol"></ion-input>
     </ion-item>
-    <ion-button expand="block" color="warning" (click)="verificar()">
-      Verificar
-    </ion-button>
-    <ion-button expand="block" color="danger" (click)="limpar()">
-      Limpar
-    </ion-button>
-  </div>
-  <div class="imagem">
-    <img src="assets/">
+    <div>
+      <ion-button expand="block" (click)="verificar()">
+        Verificar
+      </ion-button>
+    </div>
+    <div class="imagem">
+      <img src="assets/img/{{ imagem }}">
+    </div>
   </div>
 </ion-content>
