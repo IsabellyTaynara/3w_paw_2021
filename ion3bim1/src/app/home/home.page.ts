@@ -11,7 +11,7 @@ export class HomePage {
   resposta = null
 
   imagens = [
-    'logo.jpg',
+    'interrogacao.jpg',
     'gasolina.jpg',
     'etanol.jpg',
     'dois.jpg'
